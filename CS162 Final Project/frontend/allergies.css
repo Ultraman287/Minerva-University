@@ -1,0 +1,373 @@
+.jumbotron
+{
+    background: url("images/CS162 - Background Image.jpg");
+    background-color: #d4abf8;
+    border: 5px solid #000000;
+    min-height: 100vh;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.hero-text
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+
+.no-specifications
+{
+    border-radius: 45px 45px 45px 45px;
+    box-shadow: 1px black;
+    margin: 1em;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background: #e0c4f8;
+    border: 2px solid black;
+}
+
+.no-specifications:hover
+{
+    color: rgb(96, 95, 95);
+}
+
+.eggs:active
+{
+    background-image: url("images/CS162\ -\ Eggs.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.eggs:focus
+{
+    background-image: url("images/CS162\ -\ Eggs.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.fish
+{
+    position: absolute;
+    top: 230px;
+    left: 490px;
+    width: 294px;
+    height: 217px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Fish.jpg");
+}
+
+.fish:active
+{
+    background-image: url("images/CS162\ -\ Fish.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.fish:focus
+{
+    background-image: url("images/CS162\ -\ Fish.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.milk
+{
+    position: absolute;
+    top: 230px;
+    left: 840px;
+    width: 294px;
+    height: 217px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Milk.jpg");
+}
+
+.milk:active
+{
+    background-image: url("images/CS162\ -\ Milk.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.milk:focus
+{
+    background-image: url("images/CS162\ -\ Milk.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.peanuts
+{
+    position: absolute;
+    top: 230px;
+    left: 1190px;
+    width: 294px;
+    height: 217px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Peanuts.jpg");
+}
+
+.peanuts:active
+{
+    background-image: url("images/CS162\ -\ Peanuts.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.peanuts:focus
+{
+    background-image: url("images/CS162\ -\ Peanuts.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.shellfish
+{
+    position: absolute;
+    top: 510px;
+    left: 130px;
+    width: 294px;
+    height: 217px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Shellfish.jpg");
+}
+
+.shellfish:active
+{
+    background-image: url("images/CS162\ -\ Shellfish.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.shellfish:focus
+{
+    background-image: url("images/CS162\ -\ Shellfish.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.soybeans
+{
+    position: absolute;
+    top: 510px;
+    left: 490px;
+    width: 294px;
+    height: 217px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Soybeans.jpg");
+}
+
+.soybeans:active
+{
+    background-image: url("images/CS162\ -\ Soybeans.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.soybeans:focus
+{
+    background-image: url("images/CS162\ -\ Soybeans.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.tree-nuts
+{
+    position: absolute;
+    top: 510px;
+    left: 840px;
+    width: 294px;
+    height: 217px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Tree\ Nuts.jpg");
+}
+
+.tree-nuts:active
+{
+    background-image: url("images/CS162\ -\ Tree\ Nuts.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.tree-nuts:focus
+{
+    background-image: url("images/CS162\ -\ Tree\ Nuts.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.wheat
+{
+    position: absolute;
+    top: 510px;
+    left: 1190px;
+    width: 294px;
+    height: 217px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162 - Wheat.jpg");
+}
+
+.wheat:active
+{
+    background-image: url("images/CS162 - Wheat.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.wheat:focus
+{
+    background-image: url("images/CS162 - Wheat.jpg");
+    box-sizing: border-box;
+    border: 10px solid #FF0000;
+    border-radius: 30px;
+}
+
+.submit-all
+{
+    position: absolute;
+    top: 820px;
+    left: 600px;
+    height: 80px;
+    width: 350px;
+    margin-left: 0.5em;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 2px 2px black;
+    font-size: 30px;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #c489f7;
+    border: 5px solid black;
+}
+
+.submit-all:hover
+{
+    background-color: #e0c4f8;
+}
+
+
+.button{
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 1px black;
+    margin: 1em;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #c489f7;
+    border: 5px solid black;
+    justify-content: center;
+}
+
+.button:hover
+{
+    background-color: #e0c4f8;
+}
+
+.button:active
+{
+    background-color: #c489f7;
+    top: 824px;
+    left: 604px;
+    transform: scale(0.98);
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+.content
+{
+    background-color: #d4abf8;
+    border: 5px solid black;
+    text-align: center;
+    padding-bottom: 5vmin;
+}
+
+.card
+{
+    background-color: #dbb7fb;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    margin: 2em;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    color: black;
+}
+
+.card-title{
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.card-form{
+    text-align: left;
+}

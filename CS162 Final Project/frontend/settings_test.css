@@ -1,0 +1,52 @@
+.navbar
+{
+    background: url("images/CS162 - Background Image.jpg");
+}
+body .jumbotron
+{
+    background-color: #D2C8FD !important;
+    background-image: none !important;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.list-group-item {
+    flex: 1;
+    background-color: #d3bbe9;
+}
+
+.list-group-item:hover {
+    background-color: #e6d4f2;
+}
+
+
+.card-body
+{
+    background-color: #dbb7fb;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+}
+
+.map-to-be
+{
+    height: 60vmin;
+    width: 60vmin;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 30px 30px 30px 30px;
+    margin: auto;
+}
+
+.form-control
+{
+    max-width: 50%;
+    text-align: center;
+    margin: auto;
+}

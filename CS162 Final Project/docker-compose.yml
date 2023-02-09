@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+
+  web:
+    container_name: nutrisafe
+    #restart:
+    #  always
+    build: ./
+    ports:
+      - "5000:5000"
+    environment:
+      - DB_KEY=adminkey.json
+    command: gunicorn -w 1 -b :5000 app:app
+    #deploy:
+    #  replicas: 4
+    #  resources:
+    #    limits:
+    #      cpus: "0.2"
+    #      memory: 64M
+      #restart_policy:
+      #  condition: "on-failure"
+
+  nginx:
+    container_name: nginx
+    #restart: always
+    build: ./nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - web 
+
+networks:
+  webnet:

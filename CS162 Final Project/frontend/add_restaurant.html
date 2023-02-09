@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %} Add Restaurants {% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel = "stylesheet" href = "../signup.css"> 
+    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="../settings_test.css">
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+    <form method="POST" action="/add-restaurant">
+        <div class="form-group">
+            <label for="restaurantName">Restaurant Name</label>
+            <input type="text" class="form-control" id="restaurant" name="restaurant" placeholder="Enter Restaurant Name">
+        </div>
+        <div class="form-group">
+        <label for="restaurantAddress">Restaurant Address</label>
+            <input type="text" class="form-control" id="address" name="address" placeholder="Enter Restaurant Address">
+        </div>
+        <div class="form-group">
+                <label for="restaurantCity">Restaurant Google Maps Link</label>
+                <input type="text" class="form-control" id="google_maps_link" name="google_maps_link" placeholder="Enter Restaurant Google Maps Link">
+        </div>
+        <button type="submit" class = "button"> <strong>Submit preferences</strong></button>
+
+    </form>
+</div>
+{% endblock %}

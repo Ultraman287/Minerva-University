@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Saved Places Form{% endblock %}
+{% block head %}
+    {{ super() }}
+
+    <link rel = "stylesheet" href = "../../add_places.css">
+    <link rel = "stylesheet" href = "../../../base.css">
+    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+{% endblock %}
+
+
+{% block content %}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="col d-flex justify-content-center">
+            <div class="card mt-8" style="width: 20rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Please select your favorite places: </strong></h5>
+                    <form method = 'POST' action="/settings/saved-places/add-place" id="place" class="needs-validation" novalidate>
+
+                        <button class = "no-specifications" type = "submit"><strong>I DO NOT LIKE ANY PLACE BELOW.</strong></button>
+                        <div class="card-form">
+                        {% for place in places %}
+                            <input type="checkbox" id="{{place}}" name="{{place}}" value="">
+                            <label for="{{place}}"><strong>{{place}}</strong></label><br>
+                        {% endfor %}
+                        </div>
+
+                        <button type="submit" class = "button"> <strong>Submit preferences</strong></button>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

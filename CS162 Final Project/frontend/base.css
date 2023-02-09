@@ -1,0 +1,115 @@
+.content
+{
+	background-color: #d4abf8;
+}
+
+.navbar
+{
+	background-color: #d4abf8;
+}
+
+.account-button
+{
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 2px 2px black;
+    font-size: 22px;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #c68df8;
+}
+
+.account-button:hover
+{
+    background-color: #ebd9fb;
+}
+
+.account-button:active
+{
+    transform: scale(0.98);
+    box-shadow: 0px 0px 0px 0px black;
+    background-color: #c68df8;
+}
+
+.sign-out-button
+{
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 2px 2px black;
+    font-size: 22px;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #c68df8;
+}
+
+.sign-out-button:hover
+{
+    background-color: #ebd9fb;
+}
+
+.sign-out-button:active
+{
+    transform: scale(0.98);
+    box-shadow: 0px 0px 0px 0px black;
+    background-color: #c68df8;
+}
+
+.sign-in-button
+{
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 2px 2px black;
+    font-size: 22px;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #c68df8;
+}
+
+.sign-in-button:hover
+{
+    background-color: #ebd9fb;
+}
+
+.sign-in-button:active
+{
+    transform: scale(0.98);
+    box-shadow: 0px 0px 0px 0px black;
+    background-color: #c68df8;
+}
+
+.sign-up-button
+{
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 2px 2px black;
+    font-size: 22px;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #c68df8;
+}
+
+.sign-up-button:hover
+{
+    background-color: #ebd9fb;
+}
+
+.sign-up-button:active
+{
+    transform: scale(0.98);
+    box-shadow: 0px 0px 0px 0px black;
+    background-color: #c68df8;
+}
+
+.navbar-brand
+{
+    font-family: 'Inter' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 50px !important;
+    line-height: 30px !important;
+    color: black !important;
+}

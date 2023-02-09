@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}{{ restaurant }}{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel = "stylesheet" href = "../main_in.css" /> 
+    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+    <script src = "../main_in.js"></script>
+    <link rel = "stylesheet" href = "../base.css" />
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="hero-text">
+        <div class="restaurants">
+            {% if foods %}
+                <h2 class = 'text-center'><strong>Safe foods</strong></h2>
+                <ul>
+                    {% for f in foods %}
+                        <p class="text-center">
+                        {{ f }}
+                          </p>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

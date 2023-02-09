@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %} Settings {% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel = "stylesheet" href = "../signup.css"> 
+    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="../settings_test.css">
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+    <!-- Adding a sidebar locked to the jumbotron div  -->
+    <div class="container-fluid mh-100">
+        <div class="row">
+            <div class="col">
+                <nav id="sidebar">
+                    <div class="sidebar-header mt-1 ml-3">
+                        <h3>Settings</h3>
+                    </div>
+                    <div class="list-group list-group-flush ml-3 mt-5">
+                        <a href="#" class="list-group-item list-group-item-action m-1 border border-dark">Account</a>
+                        <a href="/settings/nutrition" class="list-group-item list-group-item-action m-1 border border-dark">Nutrition</a>
+                        <a href="/settings/saved-places" class="list-group-item list-group-item-action m-1 border border-dark">Saved Places</a>
+                </nav>
+            </div>
+
+            <!-- Making the page content have a light purple background -->
+            <div class="col col-9 h-100">
+                <div class="card-body mt-1 ml-5 pl-5">
+                    <h5 class="card-title">Account</h5>
+                    <h6 class="card-subtitle mb-2">Change your account settings</h6>
+
+                    <!-- Seeing your name -->
+
+                    
+                    <h6 class="card-subtitle mb-2 mt-5">Name : {{ username }}</h6>
+
+                    <!-- Seeing your email -->
+
+                    <h6 class="card-subtitle mb-2 mt-3">Email : {{ email }}</h6>
+
+                    <!-- Form to change your email -->
+
+                    <h5 class="mb-2 mt-4">Change your email </h5>
+
+                        <form>
+                            <div class="form-group mt-3">
+                                <label for="exampleInputEmail">New Email</label>
+                                <input type = 'email' class="form-control" id="new_email" name = "email" placeholder="Email">
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="exampleInputPassword">Enter Your Password</label>
+                                <input type = 'password' class="form-control" id="password" name = "password" placeholder="Password">
+                            </div>
+                            <button class="btn btn-primary mt-3" onclick="updateEmail()">Change Email</button>
+                        </form>
+
+                    <!-- Form to change your password -->
+                    <h5 class="mb-2 mt-4">Change your password </h5>
+
+                        <form>
+                            <div class="form-group mt-3" >
+                                <label for="exampleInputPassword1">Old Password</label>
+                                <input type = 'password' class="form-control" id="old_password" name = "password" placeholder="Password">
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="exampleInputPassword1">New Password</label>
+                                <input type = 'password' class="form-control" id="new_password" name = "password" placeholder="Password">
+                            </div>
+                            <button class="btn btn-primary mt-3" onclick="updatePassword()">Change Password</button>
+                        </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function updatePassword() {
+        var old_password = document.getElementById('old_password').value;
+        var new_password = document.getElementById('new_password').value;
+        console.log(old_password, new_password);
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                alert(this.responseText);
+            }
+        };
+        xhttp.open("POST", "account/new-password", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send("old_password=" + old_password + "&new_password=" + new_password);
+    }
+
+    function updateEmail() {
+        var new_email = document.getElementById('new_email').value;
+        var password = document.getElementById('password').value;
+        console.log(new_email, password);
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                alert(this.responseText);
+            }
+        };
+        xhttp.open("POST", "account/new-email", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send("new_email=" + new_email + "&password=" + password);
+    }
+
+</script>
+{% endblock %}

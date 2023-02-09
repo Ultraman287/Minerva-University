@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+    <head>
+        <title>Settings - Nutrition Page - Add Preference - Replace Page</title>
+        <link rel = "stylesheet" href = "add_preference_replace.css"> 
+        <img class = "background" src = "images/CS162 - Background Image.jpg" alt = "background image">
+    </head>
+    <body>
+        <div class = "background-2"></div>
+        <div class = "background-box"></div>
+        <label class = "main-title" for = "main-title"><strong>Your NutriSafe Settings</strong></label>
+        <label class = "account-title"><strong>Account</strong></label>
+        <label class = "nutrition-title"><strong>Nutrition</strong></label>
+        <label class = "places-title"><strong>Saved Places</strong></label>
+        <div class = "menu">
+            <a class = "account-button"></a>
+            <a class = "nutrition-button">
+                <div class = "tiny-design"></div>
+            </a>
+            <a class = "places-button"></a>
+        </div>
+        <label class = "add-food-preference"><strong>Add Food Preference</strong></label>
+        {% for want in wants %}
+            <input class = "do-not-want-choice" name="{{ want }}" type = "radio">
+            <label class = "do-not-want-title"><strong>{{ want }}</strong></label>
+        {% endfor %}
+
+        {% for rep in replace %}
+        <input class = "replace-choice" type = "radio" name = "{{{ want }}">
+        <label class = "replace-title"><strong>{{ rep }}</strong></label>
+        {% endfor %}
+
+        <form>
+            <input class = "user-food-1" type = "text" placeholder = "  Enter food">
+            <input class = "user-food-2" type = "text" placeholder = "  Enter food">
+        </form>
+        <button class = "back" type = "submit"><strong>BACK</strong></button>
+        <button class = "submit" type = "submit"><strong>SUBMIT</strong></button>
+    </body>
+</html>

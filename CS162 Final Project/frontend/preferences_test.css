@@ -1,0 +1,378 @@
+.background
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 1600px;
+    height: 1000px;
+    top: 0px;
+    left: 0px;
+    background-color: #d4abf8;
+    border: 5px solid #000000;
+}
+
+.title-1
+{
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    top: 30px;
+    left: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: black;
+}
+
+.title-2
+{
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    top: 70px;
+    left: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 30px;
+    color: black;
+}
+
+.title-3
+{
+    position: absolute;
+    width: 500px;
+    height: 60px;
+    top: 130px;
+    left: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    color: black;
+}
+
+.no-specifications
+{
+    position: absolute;
+    top: -68px;
+    left: 910px;
+    height: 200px;
+    width: 800px;
+    margin-left: 0.5em;
+    font-size: 20px;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+}
+
+.no-specifications:hover
+{
+    color: rgb(96, 95, 95);
+}
+
+.gluten-free
+{
+    position: absolute;
+    top: 230px;
+    left: 130px;
+    width: 392px;
+    height: 237px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Gluten\ Free.jpg");
+}
+
+.gluten-free:active
+{
+    background-image: url("images/CS162\ -\ Gluten\ Free.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.gluten-free:focus
+{
+    background-image: url("images/CS162\ -\ Gluten\ Free.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.halal
+{
+    position: absolute;
+    top: 230px;
+    left: 590px;
+    width: 392px;
+    height: 237px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Halal.jpg");
+}
+
+.halal:active
+{
+    background-image: url("images/CS162\ -\ Halal.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.halal:focus
+{
+    background-image: url("images/CS162\ -\ Halal.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.kosher
+{
+    position: absolute;
+    top: 230px;
+    left: 1050px;
+    width: 392px;
+    height: 237px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Kosher.jpg");
+}
+
+.kosher:active
+{
+    background-image: url("images/CS162\ -\ Kosher.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.kosher:focus
+{
+    background-image: url("images/CS162\ -\ Kosher.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.pescatarian
+{
+    position: absolute;
+    top: 530px;
+    left: 130px;
+    width: 392px;
+    height: 237px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Pescatarian.jpg");
+}
+
+.pescatarian:active
+{
+    background-image: url("images/CS162\ -\ Pescatarian.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.pescatarian:focus
+{
+    background-image: url("images/CS162\ -\ Pescatarian.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.vegetarian
+{
+    position: absolute;
+    top: 530px;
+    left: 590px;
+    width: 392px;
+    height: 237px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Vegetarian.jpg");
+}
+
+.vegetarian:active
+{
+    background-image: url("images/CS162\ -\ Vegetarian.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.vegetarian:focus
+{
+    background-image: url("images/CS162\ -\ Vegetarian.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.vegan
+{
+    position: absolute;
+    top: 530px;
+    left: 1050px;
+    width: 392px;
+    height: 237px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Vegan.jpg");
+}
+
+.vegan:active
+{
+    background-image: url("images/CS162\ -\ Vegan.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.vegan:focus
+{
+    background-image: url("images/CS162\ -\ Vegan.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.any-allergies
+{
+    position: absolute;
+    width: 500px;
+    height: 60px;
+    top: 800px;
+    left: 254px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 30px;
+    color: black;
+}
+
+.continue-to-allergies
+{
+    position: absolute;
+    top: 870px;
+    left: 250px;
+    height: 80px;
+    width: 350px;
+    margin-left: 0.5em;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 2px 2px black;
+    font-size: 23px;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #c489f7;
+    border: 5px solid black;
+}
+
+.continue-to-allergies:hover
+{
+    background-color: #e0c4f8;
+}
+
+.continue-to-allergies:active
+{
+    background-color: #c489f7;
+    top: 874px;
+    left: 254px;
+    transform: scale(0.98);
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+.no-allergies
+{
+    position: absolute;
+    width: 500px;
+    height: 60px;
+    top: 800px;
+    left: 980px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 30px;
+    color: black;
+}
+
+.submit-only-preferences
+{
+    position: absolute;
+    top: 870px;
+    left: 960px;
+    height: 80px;
+    width: 350px;
+    margin-left: 0.5em;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 2px 2px black;
+    font-size: 23px;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #c489f7;
+    border: 5px solid black;
+}
+
+.submit-only-preferences:hover
+{
+    background-color: #e0c4f8;
+}
+
+.submit-only-preferences:active
+{
+    background-color: #c489f7;
+    top: 874px;
+    left: 964px;
+    transform: scale(0.98);
+    box-shadow: 0px 0px 0px 0px black;
+}

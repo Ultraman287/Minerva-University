@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Main Page{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel = "stylesheet" href = "main_in.css"> 
+    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+    <script src = "main_in.js"></script>
+    {% if markers %}
+        {% for marker in markers %}
+            <script>
+                var marker = [{{ marker[0] }}, {{ marker[1] }}];
+                allMarkers.push(marker);
+            </script>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+
+    <div class="hero-text">
+        <h1 class="display-4 main-prompt"><strong>How can we help you?</strong></h1>
+        <form class="search-form" action = '/search' type="get">
+            <input class = "user-request" type = "text" placeholder = "Gorriti 6066, Buenos Aires, Argentina" name = "address" required>
+            <button class = "user-search" type = "submit"><strong>Search food around me</strong></button>
+        </form>
+    </div>
+</div>
+{% endblock %}

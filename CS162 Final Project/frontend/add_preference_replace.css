@@ -1,0 +1,302 @@
+.background
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 1600px;
+    height: 157px;
+    top: 0px;
+    left: 0px;
+    background: url(image.png);
+    border: 5px solid #000000;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
+
+.background-2
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 1600px;
+    height: 1633px;
+    top: 150px;
+    left: 0px;
+    background: #D2C8FD;
+    border: 5px solid #000000;
+}
+
+.main-title
+{
+    position: absolute;
+    width: 560px;
+    height: 60px;
+    top: 70px;
+    left: 500px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 30px;
+    color: white;
+    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+}
+
+.background-box
+{
+    position: absolute;
+    width: 952px;
+    height: 1421px;
+    top: 250px;
+    left: 550px;
+    background: #B4A7ED;
+    border-radius: 30px 30px 30px 30px; 
+}
+
+.account-title
+{
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    top: 270px;
+    left: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 30px;
+    color: black;
+}
+
+.nutrition-title
+{
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    top: 335px;
+    left: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 30px;
+    color: black;
+}
+
+.places-title
+{
+    position: absolute;
+    width: 360px;
+    height: 60px;
+    top: 400px;
+    left: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 30px;
+    color: black;
+}
+
+.menu a:hover 
+{
+    background-color: #7f67e6;
+    opacity: 0.5;
+}
+
+.account-button
+{
+    position: absolute;
+    width: 545px;
+    height: 64px;
+    top: 250px;
+    left: 5px;
+    background: none;
+    border: none;
+}
+
+.nutrition-button
+{
+    position: absolute;
+    width: 545px;
+    height: 64px;
+    top: 314px;
+    left: 5px;
+    background: #B4A7ED;
+    opacity: 0.5;
+    border: none;
+}
+
+.tiny-design
+{
+    position: absolute;
+    width: 7px;
+    height: 64px;
+    top: 0px;
+    left: 0px;
+    background: #5d0096;
+    border-radius: 30px;
+}
+
+.places-button
+{
+    position: absolute;
+    width: 545px;
+    height: 64px;
+    top: 378px;
+    left: 5px;
+    background: none;
+    border: none;
+}
+
+.add-food-preference
+{
+    position: absolute;
+    width: 460px;
+    height: 58px;
+    top: 278px;
+    left: 600px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #000000;
+}
+
+.do-not-want-choice
+{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 400px;
+    left: 600px;
+}
+
+.do-not-want-title
+{
+    position: absolute;
+    width: 460px;
+    height: 58px;
+    top: 390px;
+    left: 670px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 58px;
+    color: #000000;
+}
+
+.replace-choice
+{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 400px;
+    left: 1000px;
+}
+
+.replace-title
+{
+    position: absolute;
+    width: 460px;
+    height: 58px;
+    top: 390px;
+    left: 1070px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 58px;
+    color: #000000;
+}
+
+.user-food-1
+{
+    position: absolute;
+    top: 500px;
+    left: 600px;
+    height: 45px;
+    width: 800px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 20px;
+}
+
+.user-food-2
+{
+    position: absolute;
+    top: 650px;
+    left: 600px;
+    height: 45px;
+    width: 800px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 20px;
+}
+
+.back
+{
+    position: absolute;
+    top: 278px;
+    left: 1300px;
+    height: 60px;
+    width: 150px;
+    margin-left: 0.5em;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 2px 2px black;
+    font-size: 23px;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #9684e9;
+    border: 5px solid black;
+}
+
+.back:hover
+{
+    background-color: #c8c0ea;
+}
+
+.back:active
+{
+    background-color: #9684e9;
+    top: 282px;
+    left: 1254px;
+    transform: scale(0.98);
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+.submit
+{
+    position: absolute;
+    top: 800px;
+    left: 850px;
+    height: 80px;
+    width: 300px;
+    margin-left: 0.5em;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 2px 2px black;
+    font-size: 26px;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #9684e9;
+    border: 5px solid black;
+}
+
+.submit:hover
+{
+    background-color: #c8c0ea;
+}
+
+.submit:active
+{
+    background-color: #9684e9;
+    top: 654px;
+    left: 854px;
+    transform: scale(0.98);
+    box-shadow: 0px 0px 0px 0px black;
+}

@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Saved Places Settings{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="../../signup.css">
+    <link rel="stylesheet" href="../../settings_test.css">
+    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../../base.css">
+    <link rel="stylesheet" href="../../settings_places.css">
+    <script src = "../../main_in.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+    <!-- Adding a sidebar locked to the jumbotron div  -->
+    <div class="container-fluid mh-100">
+        <div class="row">
+            <div class="col">
+                <nav id="sidebar">
+                    <div class="sidebar-header mt-1 ml-3">
+                        <h3>Settings</h3>
+                    </div>
+                    <div class="list-group list-group-flush ml-3 mt-5">
+                        <a href="/settings/account" class="list-group-item list-group-item-action m-1 border border-dark">Account</a>
+                        <a href="/settings/nutrition" class="list-group-item list-group-item-action m-1 border border-dark">Nutrition</a>
+                        <a href="/settings/saved-places" class="list-group-item list-group-item-action m-1 border border-dark">Saved Places</a>
+                </nav>
+            </div>
+
+            <!-- Making the page content have a light purple background -->
+            <div class="col col-9 h-100">
+                <div class="card-body mt-1 ml-5 pl-5">
+                    <h4 class="card-title">Saved Places</h4>
+                    <h6 class="card-subtitle mb-2">Change your preferred locations!</h6>
+
+                    <!-- Food preferences -->
+                    <h5 class="card-title mt-5 font-italic">Your Favourited places</h5>
+                    {% for place in saved_places %}
+                        <h4> <a href="/search/{{ place }}" class="card-subtitle mb-2">{{ place }} </a></h4>
+                    {% endfor %}
+
+
+                    <!-- Changing your preferences -->
+
+                    <a class="btn btn-primary mt-5" href="/settings/saved-places/add-place">
+                        Add and/or Change Favorited Places
+                    </a>
+
+                    {% for location in locations %}
+                    <script type="text/javascript">
+                        var latlon = [{{ location[0] }}, {{ location[1] }}];
+                        allMarkers.push(latlon);
+                        console.log(latlon);
+                    </script>
+                    {% endfor %}
+
+                    <h5 class="card-title mt-5 font-italic">Your Map</h5>
+                    <div id="map-to-be" class="map-to-be md-4"></div>
+                    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+                    <script type="text/javascript">
+                        initMap(allMarkers);
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function updatePassword() {
+        var old_password = document.getElementById('old_password').value;
+        var new_password = document.getElementById('new_password').value;
+        console.log(old_password, new_password);
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                alert(this.responseText);
+            }
+        };
+        xhttp.open("POST", "account/new-password", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send("old_password=" + old_password + "&new_password=" + new_password);
+    }
+</script>
+{% endblock %}

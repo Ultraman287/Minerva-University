@@ -1,0 +1,294 @@
+.jumbotron
+{
+    background: url("images/CS162 - Background Image.jpg");
+    background-color: #d4abf8;
+    border: 5px solid #000000;
+    min-height: 100vh;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.hero-text
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.no-specifications
+{
+    border-radius: 45px 45px 45px 45px;
+    box-shadow: 1px black;
+    margin: 1em;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background: #e0c4f8;
+    border: 2px solid black;
+}
+
+.no-specifications:hover
+{
+    color: rgb(96, 95, 95);
+}
+
+.gluten-free
+{
+    position: absolute;
+    top: 230px;
+    left: 130px;
+    width: 392px;
+    height: 237px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Gluten\ Free.jpg");
+}
+
+.gluten-free:active
+{
+    background-image: url("images/CS162\ -\ Gluten\ Free.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.gluten-free:focus
+{
+    background-image: url("images/CS162\ -\ Gluten\ Free.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.halal
+{
+    position: absolute;
+    top: 230px;
+    left: 590px;
+    width: 392px;
+    height: 237px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Halal.jpg");
+}
+
+.halal:active
+{
+    background-image: url("images/CS162\ -\ Halal.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.halal:focus
+{
+    background-image: url("images/CS162\ -\ Halal.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.kosher
+{
+    position: absolute;
+    top: 230px;
+    left: 1050px;
+    width: 392px;
+    height: 237px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Kosher.jpg");
+}
+
+.kosher:active
+{
+    background-image: url("images/CS162\ -\ Kosher.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.kosher:focus
+{
+    background-image: url("images/CS162\ -\ Kosher.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.pescatarian
+{
+    position: absolute;
+    top: 530px;
+    left: 130px;
+    width: 392px;
+    height: 237px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Pescatarian.jpg");
+}
+
+.pescatarian:active
+{
+    background-image: url("images/CS162\ -\ Pescatarian.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.pescatarian:focus
+{
+    background-image: url("images/CS162\ -\ Pescatarian.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.vegetarian
+{
+    position: absolute;
+    top: 530px;
+    left: 590px;
+    width: 392px;
+    height: 237px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Vegetarian.jpg");
+}
+
+.vegetarian:active
+{
+    background-image: url("images/CS162\ -\ Vegetarian.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.vegetarian:focus
+{
+    background-image: url("images/CS162\ -\ Vegetarian.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.vegan
+{
+    position: absolute;
+    top: 530px;
+    left: 1050px;
+    width: 392px;
+    height: 237px;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-image: url("images/CS162\ -\ Vegan.jpg");
+}
+
+.vegan:active
+{
+    background-image: url("images/CS162\ -\ Vegan.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+.vegan:focus
+{
+    background-image: url("images/CS162\ -\ Vegan.jpg");
+    box-sizing: border-box;
+    border: 10px solid #3DE25C;
+    border-radius: 30px;
+}
+
+
+.button{
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 1px black;
+    margin: 1em;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    background-color: #c489f7;
+    border: 5px solid black;
+}
+
+.button:hover
+{
+    background-color: #e0c4f8;
+}
+
+.button:active
+{
+    background-color: #c489f7;
+    top: 824px;
+    left: 604px;
+    transform: scale(0.98);
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+.content
+{
+    background-color: #d4abf8;
+    border: 5px solid black;
+    text-align: center;
+    padding-bottom: 5vmin;
+}
+
+.card
+{
+    background-color: #dbb7fb;
+    border: 5px solid black;
+    border-radius: 30px 30px 30px 30px;
+    margin: 2em;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    color: black;
+}
+
+.card-title{
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0;
+}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Preferences Form{% endblock %}
+{% block head %}
+    {{ super() }}
+
+    <link rel = "stylesheet" href = "../../preferences.css">
+    <link rel = "stylesheet" href = "../../../base.css">
+    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+    <script src = "preferences.js"></script>
+{% endblock %}
+
+
+{% block content %}
+     <div class="jumbotron jumbotron-fluid">
+        <div class="col d-flex justify-content-center">
+            <div class="card mt-8" style="width: 20rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Please select your dietary preferences:</strong></h5>
+                    <form method = 'POST' action="/settings/nutrition/preferences" id="diet" class="needs-validation" novalidate>
+
+                        <button class = "no-specifications" type = "submit"><strong>I DO NOT HAVE DIETARY PREFERENCES.</strong></button>
+
+                        {% for diet in diets %}
+                            <input type="checkbox" id="{{diet}}" name="{{diet}}" value="">
+                            <label for="{{diet}}"><strong>{{diet}}</strong></label><br>
+                        {% endfor %}
+
+                        <button type="submit" class = "button"> <strong>Submit preferences</strong></button>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+     </div>
+
+{% endblock %}

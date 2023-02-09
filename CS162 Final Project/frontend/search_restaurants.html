@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Main Page{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel = "stylesheet" href = "main_in.css"> 
+    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+    <script src = "search.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+
+    <label class = "map-title mb-5" for = "map-title"><strong>Nearby food for you</strong></label>
+    <div id = 'map-to-be' class = "map-to-be"></div>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    
+        {% for location in markers %}
+            <script type="text/javascript">
+                var latlon = [{{ location[0]|safe }}, {{ location[1]|safe }}, "{{ location[3]|safe }}", "{{ location[2]|safe }}", "{{ location[4]|safe }}"];
+                allMarkers.push(latlon);
+            </script>
+        {% endfor %}
+
+    <script type="text/javascript">
+        initMap(allMarkers);
+    </script>
+            
+</div>
+
+{% endblock %}

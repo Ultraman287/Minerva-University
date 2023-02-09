@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %} Add Restaurants {% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel = "stylesheet" href = "../signup.css"> 
+    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="../settings_test.css">
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+    <form method="POST" action="/add-foods">
+
+        <div class="form-group">
+            <label for="food">Food Name</label>
+            <input type="text" class="form-control" id="food" name="food" placeholder="Enter Food Name">
+        </div>
+
+        <div class="form-group">
+            <label for="restaurant">Restaurant</label>
+            <select name="restaurant" id="restaurant">
+                {% for restaurant in restaurants %}
+                    <option> {{ restaurant }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="allergies">Allergies</label>
+            <select multiple class="form-control" id="allergies">
+
+            {% for allergy in allergies %}
+              <option> {{ allergy }}</option>
+            {% endfor %}
+
+            </select>
+
+        </div>
+        <div class="form-group">
+            <label for="diets">Diets</label>
+            <select multiple class="form-control" id="diets">
+
+            {% for diet in diets %}
+                <option> {{ diet }}</option>
+            {% endfor %}
+            </select>
+        </div>
+
+        <button type="submit" class = "button"> <strong>Submit preferences</strong></button>
+
+    </form>
+</div>
+{% endblock %}

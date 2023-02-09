@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Main Page{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel = "stylesheet" href = "main_out.css"> 
+    <link href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+    <script src = "main_in.js"></script>
+    {% if markers %}
+        {% for marker in markers %}
+            <script>
+                var marker = [{{ marker[0] }}, {{ marker[1] }}];
+                allMarkers.push(marker);
+                console.log(allMarkers)
+            </script>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="hero-text">
+        <h1 class="display-4 main-prompt"><strong>How can we help you?</strong></h1>
+        <form class="search-form">
+            <input class = "user-request" type = "text" placeholder = "  Enter delivery address">
+            <button class = "user-search" type = "submit"><strong>Search</strong></button>
+        </form>
+    </div>
+</div>
+<div class="container-fluid content exp-container">
+    <div class="container-fluid">
+        <div class="row exp">
+            <div class="col-lg">
+                <label class = "display-4 main-prompt"><strong>What is Nutrisafe?</strong></label>
+                <p class="h5 mt-3">Given the growing need for safe food access for individuals with preferences and allergies, Nutrisafe provides the following services:</p>
+                <ul>
+                    <li class="h5">Sharing of accessible diet substitutions for proper nutrition.</li>
+                    <li class="h5">Mapping (within one-kilometer) the restaurants where people can access safe food nearby.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
